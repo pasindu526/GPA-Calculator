@@ -72,7 +72,7 @@ function App() {
         {/* EXTRA SECTION */}
         <div className="grid md:grid-cols-2 gap-6 mt-6">
           {/* SELECTED COURSES */}
-          <div className="hidden md:block bg-white rounded-2xl shadow-lg p-6">
+          <div className="hidden md:block bg-white rounded-2xl shadow-lg p-6 pb-2 max-h-96">
             <h2 className="text-2xl font-bold text-green-600 mb-5">
               GPA Selected Courses
             </h2>
@@ -80,7 +80,7 @@ function App() {
             {result.selectedCourses.length === 0 ? (
               <p className="text-gray-500">No selected courses yet</p>
             ) : (
-              <div className="space-y-3">
+              <div className="space-y-3 max-h-4/5 overflow-y-auto">
                 {result.selectedCourses.map((course) => (
                   <div
                     key={course.code}
@@ -106,7 +106,7 @@ function App() {
           </div>
 
           {/* EXCLUDED COURSES */}
-          <div className="bg-white rounded-2xl shadow-lg p-6">
+          <div className="bg-white rounded-2xl shadow-lg p-6 pb-2 max-h-96">
             <h2 className="text-2xl font-bold text-red-600 mb-5">
               Excluded Courses
             </h2>
@@ -114,7 +114,7 @@ function App() {
             {result.excludedCourses.length === 0 ? (
               <p className="text-gray-500">No excluded courses</p>
             ) : (
-              <div className="space-y-3">
+              <div className="space-y-3 max-h-4/5 overflow-y-auto">
                 {result.excludedCourses.map((course) => (
                   <div
                     key={course.code}

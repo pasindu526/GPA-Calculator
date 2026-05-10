@@ -89,7 +89,7 @@ function CourseTable({ courses, setAddedCourses }) {
                     <td className="p-3 text-center">
                       <button
                         onClick={() => removeCourse(course.code)}
-                        className="bg-red-100 hover:bg-red-200 text-red-600 p-2 rounded-lg transition"
+                        className="bg-red-100 hover:bg-red-200 text-red-700 p-2 rounded-lg transition cursor-pointer"
                       >
                         <FaTrash />
                       </button>
@@ -135,7 +135,7 @@ function CourseTable({ courses, setAddedCourses }) {
                     <td className="p-3 text-center">
                       <button
                         onClick={() => removeCourse(course.code)}
-                        className="bg-red-100 hover:bg-red-200 text-red-600 p-2 rounded-lg transition"
+                        className="bg-red-100 hover:bg-red-200 text-red-700 p-2 rounded-lg transition"
                       >
                         <FaTrash />
                       </button>

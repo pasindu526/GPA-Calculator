@@ -16,7 +16,7 @@ function GPAStats({ result }) {
       <div className="bg-white rounded-2xl shadow-lg p-6">
         <h3 className="text-gray-500 text-sm font-medium">Current GPA</h3>
 
-        <h1 className="text-5xl font-bold text-blue-600 mt-3">{result.gpa}</h1>
+        <h1 className="text-4xl font-bold text-blue-600 mt-3">{result.gpa}</h1>
       </div>
 
       {/* CLASS CARD */}
@@ -43,9 +43,9 @@ function GPAStats({ result }) {
           Credit Progress
         </h3>
 
-        <div className="w-full bg-gray-200 rounded-full h-5 overflow-hidden">
+        <div className="w-full bg-gray-200 rounded-full h-4 overflow-hidden">
           <div
-            className="bg-blue-600 h-5 rounded-full transition-all duration-500"
+            className="bg-blue-600 h-4 rounded-full transition-all duration-500"
             style={{
               width: `${percentage}%`,
             }}
